@@ -33,3 +33,4 @@ pip3 install pycryptodome
 - Makefile: Automates build/run/clean
 - README.md: Documentation
 - server.log: Logs received messages (auto-generated)
+- design_explanation.md: Documents server-client communication, threading, and encryption utilized in the program
