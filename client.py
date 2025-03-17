@@ -2,7 +2,7 @@ import socket
 from crypto_utils import encrypt, decrypt
 
 def start_client(server_host="127.0.0.1", server_port=12345):
-    """Starts the TCP client."""
+    # Starts the TCP client.
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     client.connect((server_host, server_port))
 
