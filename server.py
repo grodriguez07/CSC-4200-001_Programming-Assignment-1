@@ -6,7 +6,7 @@ from crypto_utils import encrypt, decrypt
 logging.basicConfig(filename="server.log", level=logging.INFO, format="%(asctime)s - %(message)s")
 
 def handle_client(client_socket, address):
-    """Handles communication with a single client."""
+    # Handles communication with a single client.
     try:
         while True:
             encrypted_msg = client_socket.recv(1024)
@@ -26,7 +26,7 @@ def handle_client(client_socket, address):
         client_socket.close()
 
 def start_server(host="0.0.0.0", port=12345):
-    """Starts the TCP server."""
+    # Starts the TCP server.
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind((host, port))
     server.listen(5)
